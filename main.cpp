@@ -1,16 +1,16 @@
 #include "olcPixelGameEngine.h"
 #include "game.h"
+#include "setup.h"
 
 
 int main()
 {
-    int32_t screenWidth = 256;
-    int32_t screenHeight = 240; 
+    setting settings;
     
     // game construct
     game test;
 
-    test.Construct(screenWidth, screenHeight, 4, 4);
+    test.Construct(screen_width, screen_height, 4, 4);
     test.Start();
 
     return 0;
